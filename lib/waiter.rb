@@ -19,7 +19,7 @@ end
 
 def meals
   Meals.all.select do |meal|
-    meal.Waiter
+    meal.waiter == self
   end
 end
 end
