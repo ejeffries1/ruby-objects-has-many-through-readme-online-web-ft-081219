@@ -24,8 +24,8 @@ def meals
 end
 
 def best_tipper
-  meals.map do |a,b|
-    a<=>b
+  meals.max do |a,b|
+    a.tip<=>b.tip
   end
 end
 end
