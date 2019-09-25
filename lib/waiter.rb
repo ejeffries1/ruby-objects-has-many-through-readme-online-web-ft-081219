@@ -22,4 +22,10 @@ def meals
     meal.waiter == self
   end
 end
+
+def best_tipper
+  meals.map do |a,b|
+    a<=>b
+  end
+end
 end
